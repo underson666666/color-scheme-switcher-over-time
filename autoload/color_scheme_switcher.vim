@@ -46,7 +46,7 @@ function! SetSwitchColorSchemeDefaultSetting() abort
     endif
 endfunction
 
-function! StartColorSchemeSwitcher() abort
+function! color_scheme_switcher#StartColorSchemeSwitcher() abort
     call SetSwitchColorSchemeDefaultSetting()
     call StopSwitchColorSchemeTimer()
     call SwitchColorScheme()
