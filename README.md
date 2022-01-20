@@ -15,7 +15,11 @@ You need to have your favorite color schema installed.
 ## Usage
 ```
 # Start Switcher
-:ColorSchemeSwitcher 
+:ColorSchemeSwitcherStart
+# Stop Switcher
+:ColorSchemeSwitcherStop
+# Confirm Switcher is running
+:ColorSchemeSwitcherStatus
 ```
 
 ## Settings

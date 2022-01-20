@@ -33,6 +33,8 @@ endfunction
 function! StopSwitchColorSchemeTimer() abort
     if exists("g:color_scheme_switcher#timer")
         call timer_stop(g:color_scheme_switcher#timer)
+        unlet g:color_scheme_switcher#timer
+        echo "ColorSchmeSwitcher is stopped"
     endif
 endfunction
 
@@ -44,6 +46,18 @@ function! SetSwitchColorSchemeDefaultSetting() abort
         echo "Not defined 'g:color_scheme_switcher#colors'"
         finish
     endif
+endfunction
+
+function! color_scheme_switcher#StartColorSchemeSwitcherStatus() abort
+    if exists("g:color_scheme_switcher#timer")
+        echo "ColorSchmeSwitcher is running"
+    else
+        echo "ColorSchmeSwitcher is not running"
+    endif
+endfunction
+
+function! color_scheme_switcher#StartColorSchemeSwitcherStop() abort
+    call StopSwitchColorSchemeTimer()
 endfunction
 
 function! color_scheme_switcher#StartColorSchemeSwitcher() abort
