@@ -1,4 +1,4 @@
-# color_scheme_switcher
+# color-scheme-switcher-over-time
 
 This is vim colorscheme manager plugin.
 It's can switch colorscheme over time.
