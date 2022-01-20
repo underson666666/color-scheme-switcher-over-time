@@ -7,8 +7,7 @@ It's can switch colorscheme over time.
 
 Using the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager:
 ```
-Plug 'underson666666/color_scheme_switcher'
-
+Plug 'underson666666/color-scheme-switcher-over-time'
 ```
 You need to have your favorite color schema installed.
 
