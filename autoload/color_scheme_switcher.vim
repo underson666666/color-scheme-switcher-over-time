@@ -40,7 +40,7 @@ endfunction
 
 function! SetSwitchColorSchemeDefaultSetting() abort
     if !exists("g:color_scheme_switcher#interval")
-        let g:color_scheme_switcher#interval = 1000 * 10
+        let g:color_scheme_switcher#interval = 1000 * 60
     endif
     if !exists("g:color_scheme_switcher#colors")
         echo "Not defined 'g:color_scheme_switcher#colors'"
