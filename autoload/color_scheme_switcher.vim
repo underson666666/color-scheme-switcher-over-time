@@ -48,7 +48,7 @@ function! SetSwitchColorSchemeDefaultSetting() abort
     endif
 endfunction
 
-function! color_scheme_switcher#StartColorSchemeSwitcherStatus() abort
+function! color_scheme_switcher#GetColorSchemeSwitcherStatus() abort
     if exists("g:color_scheme_switcher#timer")
         echo "ColorSchmeSwitcher is running"
     else
@@ -56,7 +56,7 @@ function! color_scheme_switcher#StartColorSchemeSwitcherStatus() abort
     endif
 endfunction
 
-function! color_scheme_switcher#StartColorSchemeSwitcherStop() abort
+function! color_scheme_switcher#StopColorSchemeSwitcher() abort
     call StopSwitchColorSchemeTimer()
 endfunction
 
